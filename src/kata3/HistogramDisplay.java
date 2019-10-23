@@ -14,9 +14,9 @@ public class HistogramDisplay extends ApplicationFrame {
 
     public HistogramDisplay(Histogram <String> histogram) {
         super("HISTOGRAMA");
+        this.histogram = histogram;
         this.setContentPane(createPanel());
         this.pack();
-        this.histogram = histogram;
     }
 
     private JPanel createPanel() {
